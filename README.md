@@ -16,8 +16,6 @@ Plug 'mlaursen/vim-react-snippets'
 call plug#end()
 ```
 
-You can always see my [full .vimrc] for my Javascript/Typescript configuration
-and setup.
 
 ## Typescript Example
 
