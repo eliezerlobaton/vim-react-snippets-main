@@ -12,7 +12,7 @@ packages.
 ```vim
 call plug#begin('~/.vim/plugged')
 Plug 'SirVer/ultisnips'
-Plug 'mlaursen/vim-react-snippets'
+Plug 'eliezerlobaton/vim-react-snippets-main'
 call plug#end()
 ```
 
