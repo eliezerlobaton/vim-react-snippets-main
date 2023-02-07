@@ -227,6 +227,7 @@ constructor(props: ${1:`!v expand('%:t:r')`}Props) {
 endsnippet
 
 snippet fce "function component export (with prop interface)" b
+import type { ReactElement } from "react"
 
 export interface $1Props {
 	$3
@@ -238,28 +239,33 @@ export function ${1:`!v expand('%:t:r')`}(${2:props}: $1Props): ReactElement {
 endsnippet
 
 snippet fcde "function component default export (with prop interface)" b
+import type { ReactElement } from "react"
 
 export interface $1Props {
 	$3
 }
 
-export default function ${1:`!v expand('%:t:r')`}(${2:props}: $1Props): ReactElement {
+const ${1:`!v expand('%:t:r')`} = (${2:props}: $1Props): ReactElement => {
 	return ${4:<></>}$0
 }
+export default $1
 endsnippet
 
 snippet sfce "simple function component export (no prop interface)" b
+import type { ReactElement } from "react"
 
-export function ${1:`!v expand('%:t:r')`}(): ReactElement {
+export const ${1:`!v expand('%:t:r')`} = (): ReactElement => {
 	return ${2:<></>}$0
 }
 endsnippet
 
 snippet sfcde "simple function component default export (no prop interface)" b
+import type { ReactElement } from "react"
 
-export default function ${1:`!v expand('%:t:r')`}(): ReactElement {
+const ${1:`!v expand('%:t:r')`} = (): ReactElement => {
 	return ${2:<></>}$0
 }
+export default $1
 endsnippet
 
 snippet ffce "forwarded function component export"
